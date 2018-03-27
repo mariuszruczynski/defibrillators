@@ -10,18 +10,12 @@ import java.util.Scanner;
  */
 public class Solution {
 
-    //metoda zamienia podany string na typ double
-    static double toDouble(String number) {
-        return Double.parseDouble(number.replace(',', '.'));
-    }
-
     public static void main(String args[]) {
-        //System.err.println(toDouble("1,2345"));
         Scanner in = new Scanner(System.in);
         String LON = in.next();
         String LAT = in.next();
 
-        Point userLocation = new Point(toDouble(LON), toDouble(LAT));
+        Point userLocation = new Point(StringUtils.toDouble(LON), StringUtils.toDouble(LAT));
         User user = new User(userLocation);
 
         int N = in.nextInt();
