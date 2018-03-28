@@ -6,11 +6,19 @@ package pl.dominisz.defibrillators;
  */
 public class Defibrillator {
 
-    int number;
-    String name;
-    String address;
-    String phoneNumber;
-    Point location;
+    private int number;
+    private String name;
+    private String address;
+    private String phoneNumber;
+    private Point location;
+
+    public String getName() {
+        return name;
+    }
+
+    public Point getLocation() {
+        return location;
+    }
 
     static Defibrillator createDefibrillator(String description) {
         String[] tokens = description.split(";");
