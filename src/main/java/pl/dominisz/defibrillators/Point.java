@@ -23,4 +23,14 @@ public class Point {
         return d;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Point) {
+            Point point = (Point) obj;
+            return latitude == point.latitude
+                    && longitude == point.longitude;
+        } else {
+            return false;
+        }
+    }
 }

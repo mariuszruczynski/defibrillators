@@ -20,6 +20,18 @@ public class Defibrillator {
         return location;
     }
 
+    public int getNumber() {
+        return number;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
     public static Defibrillator createDefibrillator(String description) {
         String[] tokens = description.split(";");
         Defibrillator defibrillator = new Defibrillator();
