@@ -7,7 +7,7 @@ package pl.dominisz.defibrillators;
 public class StringUtils {
 
     //metoda zamienia podany string na typ double
-    static double toDouble(String number) {
+    public static double toDouble(String number) {
         return Double.parseDouble(number.replace(',', '.'));
     }
 
