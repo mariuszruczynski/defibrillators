@@ -25,7 +25,7 @@ public class SolutionTest {
         defibrillators.add(def2);
         defibrillators.add(def3);
         Defibrillator nearest = Solution.findNearest(user, defibrillators);
-        assertEquals(nearest, def1);
+        assertEquals(def1, nearest);
     }
 
 }

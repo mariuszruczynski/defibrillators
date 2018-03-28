@@ -1,9 +1,12 @@
 package pl.dominisz.defibrillators;
 
+import lombok.Data;
+
 /**
  * http://dominisz.pl
  * 27.03.2018
  */
+@Data
 public class Defibrillator {
 
     private int number;
@@ -11,26 +14,6 @@ public class Defibrillator {
     private String address;
     private String phoneNumber;
     private Point location;
-
-    public String getName() {
-        return name;
-    }
-
-    public Point getLocation() {
-        return location;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
 
     public static Defibrillator createDefibrillator(String description) {
         String[] tokens = description.split(";");
